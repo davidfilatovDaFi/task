@@ -10,14 +10,14 @@ const Navbar: NextPage<Props> = ({}) => {
     <div className='fixed w-full h-14 flex items-center bg-white shadow-sm px-4'>
       <div className='w-full flex justify-between items-center md:max-w-screen-2xl mx-auto'>
         <Logo/>
-        <div className='flex w-full sm:w-auto justify-between gap-4'>
+        <div className='flex w-auto justify-between gap-4'>
           <Button variant={'ghost'} asChild>
-            <Link href={'/log-in'}>
+            <Link href={'/sign-in'}>
               Login
             </Link>
           </Button>
           <Button asChild>
-            <Link href={'/log-up'}>
+            <Link href={'/sign-up'}>
               Get start
             </Link>
           </Button>

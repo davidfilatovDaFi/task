@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+import { siteConfig } from "@/config/siteConfig";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Taskfull",
-  description: "App for managment tasks",
+  title: {
+    default: siteConfig.name,
+    template: `%s ${siteConfig.name}`
+  },
+  description: siteConfig.description,
   icons: [
     {
       href: '/logo.svg',

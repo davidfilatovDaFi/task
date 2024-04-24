@@ -7,9 +7,9 @@ interface Props {}
 const Logo: NextPage<Props> = ({}) => {
   return (
     <Link href={'/'}>
-      <div className='hidden sm:flex items-center gap-4'>
+      <div className='flex items-center gap-4'>
         <Image src={'/logo.svg'} alt='logo' width={30} height={30}/>
-        <span>Taskfull</span>
+        <span className='hidden sm:block'>Taskfull</span>
       </div>
     </Link>
   )

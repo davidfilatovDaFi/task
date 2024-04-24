@@ -27,7 +27,7 @@ export default function Home() {
         Todolist is a leading task management tool that helps people see everything they have to do in one place. It functions as an online to-do-list, where users can manage tasks and projects, whether for themselves or as part of a team.
       </p>
       <Button size={'lg'} className='text-[24px]' asChild>
-        <Link href={'/log-up'}>Get start</Link>
+        <Link href={'/sign-up'}>Get start</Link>
       </Button>
     </main>
   );
