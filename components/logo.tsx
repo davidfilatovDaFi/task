@@ -9,7 +9,7 @@ const Logo: NextPage<Props> = ({}) => {
     <Link href={'/'}>
       <div className='flex items-center gap-4'>
         <Image src={'/logo.svg'} alt='logo' width={30} height={30}/>
-        <span className='hidden sm:block'>Taskfull</span>
+        <span className='hidden md:block'>Taskfull</span>
       </div>
     </Link>
   )

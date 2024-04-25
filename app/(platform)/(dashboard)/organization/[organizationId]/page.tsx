@@ -3,8 +3,11 @@ import { NextPage } from 'next'
 interface Props {}
 
 const OrganizationIdPage: NextPage<Props> = ({}) => {
+  
   return (
-    <div>OrgId</div>
+    <div>
+      Orgid
+    </div>
   )
 }
 
