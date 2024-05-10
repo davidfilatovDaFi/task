@@ -4,25 +4,26 @@ import { OrganizationSwitcher, UserButton } from "@clerk/nextjs"
 import { Plus } from "lucide-react"
 import Link from "next/link"
 import MobileSidebar from "./mobile-sidebar"
+import { FormPopover } from "@/components/form/form-popover"
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full flex items-center justify-between shadow-md bg-white h-14 px-4">
+    <nav className="fixed z-50 w-full flex items-center justify-between shadow-md bg-white h-14 px-4">
       <div className="flex items-center gap-2 md:gap-4">
         <MobileSidebar/>
         <div className="md:block hidden">
           <Logo/>
         </div>
-        <Button variant={'primary'} className="hidden md:block" size={'md'}>
-          <Link href={'/select-org'}>
+        <FormPopover side="bottom" sideOffset={20} align="start">
+          <Button variant={'primary'} className="hidden md:block" size={'sm'}>
             Create
-          </Link>
-        </Button>
-        <Button asChild variant={'primary'} className="md:hidden flex" size={'icon'}>
-          <Link href={'/select-org'}>
+          </Button>
+        </FormPopover>
+        <FormPopover side="bottom" sideOffset={20} align="start">
+          <Button variant={'primary'} className="md:hidden flex" size={'icon'}>
             <Plus/>
-          </Link>
-        </Button>
+          </Button>
+        </FormPopover>
       </div>
       <div className="flex gap-3">
         <OrganizationSwitcher
