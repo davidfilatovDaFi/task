@@ -33,7 +33,7 @@ export const FormPopover = ({
     onSucces: (data) => {
       toast.success('Board created');
       closeRef.current?.click();
-      router.push(`board/${data.id}`);
+      router.push(`/board/${data.id}`);
     },
     onError: (error) => {
       toast.error(error);

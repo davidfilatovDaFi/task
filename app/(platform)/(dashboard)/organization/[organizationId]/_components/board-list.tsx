@@ -1,5 +1,6 @@
 import { FormPopover } from "@/components/form/form-popover"
 import { Hint } from "@/components/hint"
+import { Skeleton } from "@/components/ui/skeleton"
 import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs/server"
 import { HelpCircle, User } from "lucide-react"
@@ -58,6 +59,24 @@ export const BoardList = async () => {
             </Hint>
           </div>
         </FormPopover>
+      </div>
+    </div>
+  )
+}
+
+
+BoardList.Skeleton = () => {
+  return (
+    <div className="space-y-4">
+      <div className="flex items-center gap-2 text-lg text-neutral-700">
+        <User className="w-6 h-6"/>
+        <h2>Your Boards</h2>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <Skeleton className="w-full h-full aspect-video p-2"/>
+        <Skeleton className="w-full h-full aspect-video p-2"/>
+        <Skeleton className="w-full h-full aspect-video p-2"/>
+        <Skeleton className="w-full h-full aspect-video p-2"/>
       </div>
     </div>
   )
