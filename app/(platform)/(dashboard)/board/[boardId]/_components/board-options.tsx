@@ -40,11 +40,11 @@ export const BoardOptions = ({id}: IBoardOptionsProps) => {
         sideOffset={10}
         className="px-0 py-3"
       >
-        <h2 className="text-center mb-3">Board options</h2>
+        <h2 className="text-center mb-3 text-neutral-800 font-medium">Board options</h2>
         <PopoverClose asChild>
           <Button
             variant={'ghost'}
-            className="wauto h-auto p-2 absolute right-2 top-2"
+            className="w-auto h-auto p-2 absolute right-2 top-2"
           >
             <X className="w-4 h-4"/>
           </Button>

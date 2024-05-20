@@ -2,7 +2,6 @@ import { db } from "@/lib/db"
 import { auth } from "@clerk/nextjs/server"
 import { startCase } from "lodash"
 import { notFound, redirect } from "next/navigation"
-import { title } from "process"
 import { ReactNode } from "react"
 import { BoardNavbar } from "./_components/board-navbar"
 

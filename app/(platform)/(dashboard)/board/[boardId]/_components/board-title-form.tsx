@@ -41,6 +41,12 @@ export const BoardTitleForm = ({board}: IBoardTitleFormProps) => {
 
   const onSubmit = (formData: FormData) => {
     const title = formData.get('title') as string
+
+    if (title === board.title) {
+      setIsEditing(false)
+      return
+    }
+
     execute({title, id: board.id})
   }
 
@@ -53,7 +59,7 @@ export const BoardTitleForm = ({board}: IBoardTitleFormProps) => {
         defaultValue={title}
         className="font-bold text-lg bg-transparent focus-visible:outline-none 
         focus-visible:ring-transparent focus-visible:ring-offset-0 
-        border-none"
+        border-none px-4 pb-[10px]"
       />
     </form>
   )
