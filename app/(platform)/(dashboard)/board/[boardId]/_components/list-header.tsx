@@ -1,10 +1,7 @@
 import { updateList } from "@/actions/update-list";
 import { FormInput } from "@/components/form/form-input";
-import { FormSubmit } from "@/components/form/form-submit";
-import { Button } from "@/components/ui/button";
 import { useAction } from "@/hooks/use-action";
 import { List } from "@prisma/client";
-import { MoreHorizontal, X } from "lucide-react";
 import { ElementRef, useRef, useState } from "react";
 import { toast } from "sonner";
 import { ListOptions } from "./list-options";

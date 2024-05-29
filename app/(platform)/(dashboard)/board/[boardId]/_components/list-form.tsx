@@ -65,7 +65,7 @@ export const ListForm = () => {
             border-none w-full text-sm"
           />
           <div className="flex items-center gap-2">
-            <FormSubmit>
+            <FormSubmit variant="primary">
               Create List
             </FormSubmit>
             <Button

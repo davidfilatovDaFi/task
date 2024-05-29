@@ -1,9 +1,10 @@
-import { ReactNode } from "react"
+import { ReactNode, forwardRef } from "react"
 
-export const ListWrapper = ({children}: {children: ReactNode}) => {
+export const ListWrapper = forwardRef<HTMLLIElement, {children: ReactNode}>((
+  {children, ...props}, ref) => {
   return (
-    <li className="shrink-0 h-full w-[272px] select-none">
+    <li {...props} ref={ref} className="shrink-0 h-full w-[272px] select-none">
       {children}
     </li>
   )
-}
+})
