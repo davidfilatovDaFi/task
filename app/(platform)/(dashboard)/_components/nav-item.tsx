@@ -20,7 +20,7 @@ interface INavItemProps {
   onExpand: (id: string) => void
 }
 
-const NavItem = ({isActive, isExpended, organization, onExpand}: INavItemProps) => {
+function NavItem({isActive, isExpended, organization, onExpand}: INavItemProps) {
 
   const routes = [
     {
@@ -89,7 +89,7 @@ const NavItem = ({isActive, isExpended, organization, onExpand}: INavItemProps) 
   )
 }
 
-NavItem.Skeleton = () => {
+NavItem.Skeleton = function SkeletonNavItem() {
   return (
     <div className="flex items-center gap-2">
       <Skeleton className="w-10 h-10 shrink-0"/>

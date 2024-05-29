@@ -7,7 +7,7 @@ import { HelpCircle, User } from "lucide-react"
 import Link from "next/link"
 import { redirect } from "next/navigation"
 
-export const BoardList = async () => {
+export async function BoardList() {
 
   const {orgId} = auth()
 
@@ -64,8 +64,7 @@ export const BoardList = async () => {
   )
 }
 
-
-BoardList.Skeleton = () => {
+BoardList.Skeleton = function SkeletonBoardList() {
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2 text-lg text-neutral-700">

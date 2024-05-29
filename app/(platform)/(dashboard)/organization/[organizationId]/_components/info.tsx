@@ -5,7 +5,7 @@ import { useOrganization } from "@clerk/nextjs"
 import { CreditCard } from "lucide-react"
 import Image from "next/image"
 
-export const Info = () => {
+export function Info() {
 
   const {organization, isLoaded} = useOrganization()
 
@@ -32,7 +32,7 @@ export const Info = () => {
   )
 }
 
-Info.Skeleton = () => {
+Info.Skeleton = function SkeletonInfo() {
   return (
     <div className="flex gap-4 items-center">
       <Skeleton className="w-[60px] h-[60px]"/>

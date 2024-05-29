@@ -65,3 +65,5 @@ export const FormTextare = forwardRef<HTMLTextAreaElement, IFormTextaredProps>((
     </div>
   )
 })
+
+FormTextare.displayName = 'FormTextare'

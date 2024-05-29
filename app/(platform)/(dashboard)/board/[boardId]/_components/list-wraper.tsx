@@ -8,3 +8,5 @@ export const ListWrapper = forwardRef<HTMLLIElement, {children: ReactNode}>((
     </li>
   )
 })
+
+ListWrapper.displayName = 'ListWrapper'
