@@ -1,4 +1,3 @@
-import { NextPage } from 'next'
 import { Info } from './_components/info'
 import { Separator } from '@/components/ui/separator'
 import { BoardList } from './_components/board-list'
